@@ -254,10 +254,13 @@
         <div class="role">Automation &amp; Systems Specialist</div>
         <ul>
           <li>Built and maintain a fleet of <b>27 production n8n workflows</b> — LinkedIn audits, content strategy pipelines, outreach DM engines, lead scoring, and internal ops tooling — integrating ClickUp, Google Docs/Sheets, Claude, and external APIs.</li>
+          <li>Instrumented every workflow with execution and <b>token-level cost telemetry</b>, feeding a live ops dashboard so run health and per-run API spend are visible instead of guessed at.</li>
           <li>Cut proposal generation from <b>20–25 minutes to ~5 minutes</b> with an AI proposal engine that writes in each consultant's voice and delivers straight into ClickUp.</li>
           <li>Automated Upwork job extraction and filtering with Apify + custom scripts, pushing qualified leads directly to ClickUp — <b>proposal response rate up from 16% to ~30%</b>.</li>
           <li>Shipped a fully autonomous <b>SEO content pipeline</b>: weekly keyword discovery → competitor scraping → AI-written briefs and articles → image generation → published as Webflow drafts, end to end.</li>
+          <li>Built a <b>multi-agent content strategy pipeline</b> — audit → tone-of-voice → strategy → calendar → posts — with human approval gates at every stage, turning one intake form into client-ready deliverables.</li>
           <li>Built self-healing infrastructure: an error watchdog that catches any workflow failure and an <b>AI autofix loop</b> that diagnoses, patches, and redeploys broken workflows automatically.</li>
+          <li>Designed and delivered internal <b>AI upskilling workshops</b> — facilitator scripts, live builds, and a reusable prompt library — so non-technical teams could build their own automations.</li>
         </ul>
         <div class="chipset">
           <span class="chip">n8n</span><span class="chip">CLAUDE API</span><span class="chip">APIFY</span>
@@ -266,18 +269,20 @@
       </div>
 
       <div class="job rv">
-        <div class="when">2026 · Remote — US Client</div>
-        <h3>US Recruiting Company <span style="color:var(--dim);font-size:15px">· Confidential</span></h3>
-        <div class="role">Data &amp; Automation Engineer</div>
+        <div class="when">Jul 2026 — Present · Part-Time · Remote</div>
+        <h3>DevPlusOps <span style="color:var(--dim);font-size:15px">· US recruiting platform, confidential</span></h3>
+        <div class="role">Automation Engineer</div>
         <ul>
           <li>Led a full <b>Airtable → Supabase (Postgres) migration</b>: ~200K records across 30+ tables extracted losslessly into an immutable raw layer with complete audit logging.</li>
           <li>Designed and built the target schema — <b>fully typed relational tables with validated foreign keys and enriched views</b> — rebuildable from raw at any time, with row-level provenance back to every source record.</li>
-          <li>Deduplicated <b>tens of thousands of candidate records</b> into canonical identities with a reversible merge strategy.</li>
+          <li>Reproduced <b>hundreds of legacy computed fields</b> as live Postgres views and materialised views, so every downstream metric kept calculating after the old system was switched off.</li>
           <li>Audited the client's entire <b>Make.com and Zapier automation estate</b>, mapped every writer to the database, and built dual-write endpoints for a zero-downtime cutover.</li>
+          <li>Built the internal tooling on the new stack — a <b>multi-view operations app</b>, a <b>member portal</b> (magic-link auth, hiring requests, candidate packets), and recruiter tools deployed on Vercel.</li>
+          <li>Diagnosed and fixed production <b>data-integrity failures</b> across the automation estate — dual-write gaps, stale overwrites, deadlocking view refreshes — recovering parity on thousands of records.</li>
         </ul>
         <div class="chipset">
           <span class="chip">SUPABASE</span><span class="chip">POSTGRES</span><span class="chip">AIRTABLE API</span>
-          <span class="chip">NODE.JS</span><span class="chip">MAKE.COM</span><span class="chip">ZAPIER</span>
+          <span class="chip">NODE.JS</span><span class="chip">MAKE.COM</span><span class="chip">VERCEL</span>
         </div>
       </div>
 
@@ -334,6 +339,18 @@
         <h3>SEO Content Factory</h3>
         <p>Keyword in, published article out. Weekly keyword discovery, competitor scraping, AI-written briefs and drafts with approval gates, <b>AI-generated imagery</b>, and automatic Webflow publishing — plus a Monday Search Console digest.</p>
       </div>
+      <div class="card rv">
+        <svg class="gearmark"><use href="#minigear" style="color:#9aa3ad"/></svg>
+        <div class="no">BUILD / 05</div>
+        <h3>Ops Dashboard &amp; Cost Telemetry</h3>
+        <p>Every workflow in the fleet reports execution and <b>token-level cost</b> to a live dashboard — run health, failure history, and per-run API spend in one place, with an AI chatbot on top that answers questions about the fleet in plain language.</p>
+      </div>
+      <div class="card rv">
+        <svg class="gearmark"><use href="#minigear" style="color:#9aa3ad"/></svg>
+        <div class="no">BUILD / 06</div>
+        <h3>Computed-Field Engine</h3>
+        <p>The hard half of a no-code → Postgres migration: <b>hundreds of legacy computed fields</b> rebuilt as live views and materialised views, so every rollup, lookup, and metric kept calculating after the source system was retired.</p>
+      </div>
     </div>
   </section>
 
@@ -348,11 +365,29 @@
       </div>
       <div class="stk rv">
         <div class="h">AI &amp; Data</div>
-        <ul><li>Claude API</li><li>Prompt engineering</li><li>Supabase / Postgres</li><li>Python</li><li>Data scraping</li><li>R / SPSS</li></ul>
+        <ul><li>Claude API</li><li>Model Context Protocol</li><li>Prompt engineering</li><li>Supabase / Postgres</li><li>Python</li><li>Data scraping</li></ul>
       </div>
       <div class="stk rv">
         <div class="h">Platforms</div>
         <ul><li>ClickUp</li><li>Google Workspace APIs</li><li>Webflow</li><li>Airtable</li><li>Vercel / Next.js</li><li>GitHub</li></ul>
+      </div>
+    </div>
+
+    <div class="stk rv" style="margin-top:24px">
+      <div class="h">Certifications · Anthropic</div>
+      <div class="chipset" style="margin-top:0">
+        <span class="chip">AI FLUENCY: FRAMEWORK &amp; FOUNDATIONS</span>
+        <span class="chip">BUILDING WITH THE CLAUDE API</span>
+        <span class="chip">CLAUDE CODE IN ACTION</span>
+        <span class="chip">CLAUDE CODE 101</span>
+        <span class="chip">INTRODUCTION TO MODEL CONTEXT PROTOCOL</span>
+        <span class="chip">INTRODUCTION TO AGENT SKILLS</span>
+      </div>
+      <div class="h" style="margin-top:24px">Also</div>
+      <div class="chipset" style="margin-top:0">
+        <span class="chip">POWER BI · DATACAMP</span>
+        <span class="chip">TEXT ANALYSIS · DATACAMP</span>
+        <span class="chip">DATA SCIENCE &amp; ANALYSIS · HP LIFE</span>
       </div>
     </div>
   </section>
@@ -361,7 +396,8 @@
   <section id="contact">
     <div class="sec-label rv" style="max-width:1100px;margin:0 auto 18px"><span class="idx">04</span> CONTACT</div>
     <h2 class="rv">Got a bottleneck?<br><span class="metal">Let's automate it.</span></h2>
-    <p class="sub2 rv">Currently at Soch Consulting. BSc from LUMS — Management Sciences with a CS minor.
+    <p class="sub2 rv">Automation engineer at Soch Consulting, plus part-time data &amp; automation work
+      for a US recruiting platform. BSc from LUMS — Management Sciences with a CS minor.
       Always up for a hard automation problem.</p>
     <div class="contact-row rv">
       <a class="btn" href="mailto:ahmadtehseen03@gmail.com">EMAIL ME →</a>
@@ -604,7 +640,7 @@ setInterval(()=>{
 },2600);
 
 /* ---- marquee ---- */
-const tools=["n8n","CLAUDE API","APIFY","SUPABASE","CLICKUP","MAKE.COM","GOOGLE SHEETS","WEBFLOW","PYTHON","REPLICATE","DISCORD BOTS","APPS SCRIPT","WEBHOOKS"];
+const tools=["n8n","CLAUDE API","MCP","APIFY","SUPABASE","POSTGRES","CLICKUP","MAKE.COM","GOOGLE SHEETS","WEBFLOW","PYTHON","VERCEL","REPLICATE","DISCORD BOTS","APPS SCRIPT","WEBHOOKS"];
 const half=tools.map(t=>`<span>${t}</span><span class="sep">·</span>`).join("");
 document.getElementById("track").innerHTML=half+half;
 </script>
