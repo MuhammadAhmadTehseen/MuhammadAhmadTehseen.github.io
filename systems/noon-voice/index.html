@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noon enrollment kiosk | Muhammad Ahmad Tehseen</title>
+<meta name="description" content="An Urdu tablet kiosk that talks staff through enrolling out-of-school children, with almost no typing.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Noon enrollment kiosk | Muhammad Ahmad Tehseen">
+<meta property="og:description" content="An Urdu tablet kiosk that talks staff through enrolling out-of-school children, with almost no typing.">
+<meta property="og:image" content="https://muhammadahmadtehseen.github.io/assets/img/noon-voice-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0d">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="../../"><span class="light s-live" aria-hidden="true"></span>ahmad<span class="dim">/systems</span></a>
+  <nav aria-label="Main"><a href="../../#systems">Systems</a><a href="../../#experience">Experience</a><a href="../../#contact">Contact</a></nav>
+</div></header>
+<main id="main">
+
+<article class="wrap sys">
+  <p class="back"><a href="../../#systems">← all systems</a></p>
+  <header class="sys-head">
+    <p class="meta"><span class="light s-built" aria-hidden="true"></span>built · Noon Academy · May 2026</p>
+    <h1 class="h1 sys-title">Noon enrollment kiosk</h1>
+    <p class="lead">An Urdu tablet kiosk that talks staff through enrolling out-of-school children, with almost no typing.</p>
+    <p class="role"><span class="mono dim">my role</span> Built it solo: 23 commits in 13 days.</p>
+  </header>
+  <figure class="player">
+    <video controls preload="none" playsinline poster="../../assets/img/noon-voice-poster.jpg"><source src="../../assets/video/noon-voice.mp4" type="video/mp4"></video>
+    <figcaption>A 30 second walkthrough with a made-up student: B-form reading, spoken Urdu prompts, tap grids and the saved record.</figcaption>
+  </figure>
+  
+  <section class="sys-sec"><h2 class="h4">The problem</h2><p>Enrolling out-of-school children meant long forms and manual entry into sheets. Staff needed something they could use in Urdu, on a tablet, with almost no typing.</p></section>
+  
+  <section class="sys-sec"><h2 class="h4">How it works</h2><ol class="steps"><li>Staff photograph the child&#39;s B-form, and Claude Haiku reads the fields from the photo.</li><li>The kiosk speaks each question in Urdu, and staff answer on number pads and tap grids.</li><li>A student photo is taken, and the whole record is read back aloud for review.</li><li>n8n saves it to a 31-column Google Sheet, files the photos in Drive and makes the roll number.</li></ol></section>
+  
+  <section class="sys-sec"><h2 class="h4">What changed</h2><ul class="results"><li><b>17</b><span>steps in the enrollment flow</span></li><li><b>29</b><span>n8n nodes behind it</span></li><li><b>70</b><span>n8n calls saved by the speech cache</span></li><li><b>31</b><span>columns filled per child</span></li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">What I built</h2><ul class="points"><li>The React tablet app and the 17-step enrollment flow.</li><li>The 29-node n8n workflow behind it.</li><li>A speech cache that removes about 70 n8n calls after the first session.</li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">Stack</h2><ul class="chips"><li class="chip">React</li><li class="chip">TypeScript</li><li class="chip">Vite</li><li class="chip">n8n</li><li class="chip">Claude Haiku</li><li class="chip">Soniox</li><li class="chip">Web Speech API</li><li class="chip">Google Sheets</li><li class="chip">Vercel</li></ul></section>
+  
+  
+  <section class="sys-sec"><h2 class="h4">Stills</h2><div class="stills"><img src="../../assets/img/noon-voice-1.jpg" alt="A sample B-form photo being read by Claude Haiku into fields" loading="lazy" decoding="async"><img src="../../assets/img/noon-voice-2.jpg" alt="The kiosk asking which class, spoken in Urdu, with Class 3 tapped" loading="lazy" decoding="async"><img src="../../assets/img/noon-voice-3.jpg" alt="The enrollment flow from B-form photo to the n8n save" loading="lazy" decoding="async"><img src="../../assets/img/noon-voice-4.jpg" alt="One saved record with 31 columns, 29 n8n nodes and 70 calls saved by the speech cache" loading="lazy" decoding="async"></div></section>
+  <nav class="pager" aria-label="More systems">
+    <a href="../../systems/autoflow/"><span class="dim">previous</span>AutoFlow</a>
+    <a href="../../systems/n8n-fleet/"><span class="dim">next</span>n8n fleet and ops dashboard</a>
+  </nav>
+</article>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+  <span>© 2026 Muhammad Ahmad Tehseen</span>
+  <span>Hand-built. Every video on this site is rendered from code.</span>
+</div></footer>
+<script src="../../assets/js/loops.js" defer></script>
+</body>
+</html>

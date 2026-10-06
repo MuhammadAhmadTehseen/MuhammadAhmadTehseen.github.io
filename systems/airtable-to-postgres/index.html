@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airtable to Postgres | Muhammad Ahmad Tehseen</title>
+<meta name="description" content="Moving a US talent marketplace off Airtable while the business kept running.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Airtable to Postgres | Muhammad Ahmad Tehseen">
+<meta property="og:description" content="Moving a US talent marketplace off Airtable while the business kept running.">
+<meta property="og:image" content="https://muhammadahmadtehseen.github.io/assets/img/airtable-to-postgres-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0d">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="../../"><span class="light s-live" aria-hidden="true"></span>ahmad<span class="dim">/systems</span></a>
+  <nav aria-label="Main"><a href="../../#systems">Systems</a><a href="../../#experience">Experience</a><a href="../../#contact">Contact</a></nav>
+</div></header>
+<main id="main">
+
+<article class="wrap sys">
+  <p class="back"><a href="../../#systems">← all systems</a></p>
+  <header class="sys-head">
+    <p class="meta"><span class="light s-live" aria-hidden="true"></span>live · US talent marketplace, via DevPlusOps · Jun 2026 to present</p>
+    <h1 class="h1 sys-title">Airtable to Postgres</h1>
+    <p class="lead">Moving a US talent marketplace off Airtable while the business kept running.</p>
+    <p class="role"><span class="mono dim">my role</span> Forward Deployed Engineer: led the migration and built the tools on top. 49 of 58 commits.</p>
+  </header>
+  <figure class="player">
+    <video controls preload="none" playsinline poster="../../assets/img/airtable-to-postgres-poster.jpg"><source src="../../assets/video/airtable-to-postgres.mp4" type="video/mp4"></video>
+    <figcaption>A 40 second walkthrough: mirroring the bases, rebuilding computed fields in SQL, dual writes, parity checks and the tools built on the new database. The client is not named.</figcaption>
+  </figure>
+  
+  <section class="sys-sec"><h2 class="h4">The problem</h2><p>A recruiting marketplace ran its whole business on four Airtable bases, hundreds of computed fields and dozens of Make.com scenarios. It needed a real database without breaking the automations and tools its team used every day.</p></section>
+  
+  <section class="sys-sec"><h2 class="h4">How it works</h2><ol class="steps"><li>Extract every base into raw JSON in Postgres, then generate a one-to-one mirror schema.</li><li>Rebuild every Airtable view and compile every computed field into SQL views and materialized views.</li><li>Keep Airtable live: Make.com and Zapier write to both systems through an n8n endpoint.</li><li>Rebuild Airtable-only automations on n8n and point the recruiter tools at Supabase.</li><li>Run parity checks, find the gaps and fix them until both sides match.</li></ol></section>
+  
+  <section class="sys-sec"><h2 class="h4">What changed</h2><ul class="results"><li><b>397,867</b><span>records extracted</span></li><li><b>636</b><span>computed fields rebuilt as live views</span></li><li><b>632</b><span>Airtable views rebuilt in Postgres</span></li><li><b>99.985%</b><span>row parity across about 230k rows</span></li><li><b>89</b><span>Make.com scenarios audited</span></li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">What I built</h2><ul class="points"><li>The extraction and mirror pipeline, and the computed-field compiler.</li><li>An operations app with 40 views for 48 users, and a member portal with magic-link sign-in.</li><li>The parity checks and the fixes that brought row parity to 99.985%.</li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">Stack</h2><ul class="chips"><li class="chip">Supabase</li><li class="chip">PostgreSQL</li><li class="chip">Node.js</li><li class="chip">n8n</li><li class="chip">Make.com</li><li class="chip">Zapier</li><li class="chip">Vercel</li></ul></section>
+  
+  
+  <section class="sys-sec"><h2 class="h4">Stills</h2><div class="stills"><img src="../../assets/img/airtable-to-postgres-1.jpg" alt="Airtable tables mirrored into Postgres, with 397,867 records extracted" loading="lazy" decoding="async"><img src="../../assets/img/airtable-to-postgres-2.jpg" alt="636 computed fields rebuilt as live SQL views" loading="lazy" decoding="async"><img src="../../assets/img/airtable-to-postgres-3.jpg" alt="Dual writes: Make.com and Zapier write to Airtable and Postgres through an n8n endpoint" loading="lazy" decoding="async"><img src="../../assets/img/airtable-to-postgres-4.jpg" alt="The operations app, member portal and recruiter tools built on the new database" loading="lazy" decoding="async"></div></section>
+  <nav class="pager" aria-label="More systems">
+    <a href="../../systems/jarvis/"><span class="dim">previous</span>Jarvis</a>
+    <a href="../../systems/autoflow/"><span class="dim">next</span>AutoFlow</a>
+  </nav>
+</article>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+  <span>© 2026 Muhammad Ahmad Tehseen</span>
+  <span>Hand-built. Every video on this site is rendered from code.</span>
+</div></footer>
+<script src="../../assets/js/loops.js" defer></script>
+</body>
+</html>

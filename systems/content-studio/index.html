@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soch Content Studio | Muhammad Ahmad Tehseen</title>
+<meta name="description" content="The app Soch&#39;s team uses to run LinkedIn for founder clients, from first audit to designed post.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Soch Content Studio | Muhammad Ahmad Tehseen">
+<meta property="og:description" content="The app Soch&#39;s team uses to run LinkedIn for founder clients, from first audit to designed post.">
+<meta property="og:image" content="https://muhammadahmadtehseen.github.io/assets/img/content-studio-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0d">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="../../"><span class="light s-live" aria-hidden="true"></span>ahmad<span class="dim">/systems</span></a>
+  <nav aria-label="Main"><a href="../../#systems">Systems</a><a href="../../#experience">Experience</a><a href="../../#contact">Contact</a></nav>
+</div></header>
+<main id="main">
+
+<article class="wrap sys">
+  <p class="back"><a href="../../#systems">← all systems</a></p>
+  <header class="sys-head">
+    <p class="meta"><span class="light s-live" aria-hidden="true"></span>live · Soch Consulting · Aug 2026 to present</p>
+    <h1 class="h1 sys-title">Soch Content Studio</h1>
+    <p class="lead">The app Soch&#39;s team uses to run LinkedIn for founder clients, from first audit to designed post.</p>
+    <p class="role"><span class="mono dim">my role</span> Designed and built it: 311 of 363 commits. Deployed on Railway.</p>
+  </header>
+  <figure class="player">
+    <video controls preload="none" playsinline poster="../../assets/img/content-studio-poster.jpg"><source src="../../assets/video/content-studio.mp4" type="video/mp4"></video>
+    <figcaption>A 45 second walkthrough with a made-up sample founder: intake, posts through four quality gates, Card Studio images, comment drafts, onboarding, and why the old n8n version was replaced.</figcaption>
+  </figure>
+  
+  <section class="sys-sec"><h2 class="h4">The problem</h2><p>Running a founder&#39;s LinkedIn took a strategist, a writer and a designer, held together by an n8n workflow. That workflow took 17 to 21 minutes per run, 4 of its last 23 runs failed, and its parser silently dropped two thirds of what the AI wrote.</p></section>
+  
+  <section class="sys-sec"><h2 class="h4">How it works</h2><ol class="steps"><li>Intake scrapes the founder&#39;s profile and posts, then writes the LinkedIn audit, tone of voice, ICP and profile revamp documents in Google Docs.</li><li>The team picks from 30 themes and their ideas, and Claude drafts posts in seven styles.</li><li>Every post passes four gates: a claim check, the writer, a code scanner for robotic AI phrasing, and a voice editor.</li><li>A client-approved post becomes a design request. Card Studio fills on-brand cards from 23 templates, and gpt-image-2 makes post images.</li><li>Each weekday it drafts comments for the founder under posts by creators their buyers follow.</li><li>Onboarding turns 11 deliverables into up to 127 dated ClickUp tasks.</li></ol></section>
+  
+  <section class="sys-sec"><h2 class="h4">What changed</h2><ul class="results"><li><b>17 to 21 min</b><span>per run in the old n8n version</span></li><li><b>4 of 23</b><span>old runs that failed</span></li><li><b>2/3</b><span>of AI output the old parser lost</span></li><li><b>127</b><span>dated ClickUp tasks from one onboarding</span></li><li><b>23</b><span>Card Studio templates</span></li><li><b>44</b><span>offline test suites</span></li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">What I built</h2><ul class="points"><li>The whole Next.js and TypeScript app, with Google Sheets, Drive and Docs as the data layer.</li><li>The four-gate writing pipeline using structured outputs, prompt caching and web search.</li><li>Card Studio and the image generation flow: Claude picks one of 24 visual briefs and writes the prompt for gpt-image-2; cards render with Satori and Sharp.</li><li>Per-client cost tracking with a hard spend cap, and 44 offline test suites.</li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">Stack</h2><ul class="chips"><li class="chip">Next.js</li><li class="chip">TypeScript</li><li class="chip">Claude API</li><li class="chip">gpt-image-2</li><li class="chip">Satori</li><li class="chip">Sharp</li><li class="chip">Google Sheets API</li><li class="chip">ClickUp API</li><li class="chip">Apify</li><li class="chip">Railway</li></ul></section>
+  
+  
+  <section class="sys-sec"><h2 class="h4">Stills</h2><div class="stills"><img src="../../assets/img/content-studio-1.jpg" alt="Intake: a sample founder profile link and the strategy documents being written" loading="lazy" decoding="async"><img src="../../assets/img/content-studio-2.jpg" alt="A sample post being drafted in story style next to themes and ideas" loading="lazy" decoding="async"><img src="../../assets/img/content-studio-3.jpg" alt="Card Studio: a client-approved post turned into a wall of on-brand sample cards" loading="lazy" decoding="async"><img src="../../assets/img/content-studio-4.jpg" alt="The old n8n version by the numbers, with what the app does instead" loading="lazy" decoding="async"></div></section>
+  <nav class="pager" aria-label="More systems">
+    <a href="../../systems/maya/"><span class="dim">previous</span>Maya</a>
+    <a href="../../systems/seo-blogs/"><span class="dim">next</span>Soch SEO Blogs App</a>
+  </nav>
+</article>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+  <span>© 2026 Muhammad Ahmad Tehseen</span>
+  <span>Hand-built. Every video on this site is rendered from code.</span>
+</div></footer>
+<script src="../../assets/js/loops.js" defer></script>
+</body>
+</html>

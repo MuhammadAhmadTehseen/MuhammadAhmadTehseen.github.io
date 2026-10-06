@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis | Muhammad Ahmad Tehseen</title>
+<meta name="description" content="A self-healing layer for n8n: failures are caught, explained by Claude and patched through the n8n API.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jarvis | Muhammad Ahmad Tehseen">
+<meta property="og:description" content="A self-healing layer for n8n: failures are caught, explained by Claude and patched through the n8n API.">
+<meta property="og:image" content="https://muhammadahmadtehseen.github.io/assets/img/jarvis-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0d">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="../../"><span class="light s-live" aria-hidden="true"></span>ahmad<span class="dim">/systems</span></a>
+  <nav aria-label="Main"><a href="../../#systems">Systems</a><a href="../../#experience">Experience</a><a href="../../#contact">Contact</a></nav>
+</div></header>
+<main id="main">
+
+<article class="wrap sys">
+  <p class="back"><a href="../../#systems">← all systems</a></p>
+  <header class="sys-head">
+    <p class="meta"><span class="light s-built" aria-hidden="true"></span>built · Soch Consulting · Jun 2026</p>
+    <h1 class="h1 sys-title">Jarvis</h1>
+    <p class="lead">A self-healing layer for n8n: failures are caught, explained by Claude and patched through the n8n API.</p>
+    <p class="role"><span class="mono dim">my role</span> Designed and built the six-workflow suite.</p>
+  </header>
+  <figure class="player">
+    <video controls preload="none" playsinline poster="../../assets/img/jarvis-poster.jpg"><source src="../../assets/video/jarvis.mp4" type="video/mp4"></video>
+    <figcaption>A 35 second walkthrough of one staged failure: caught, explained, patched through the n8n API, redeployed and reported.</figcaption>
+  </figure>
+  
+  <section class="sys-sec"><h2 class="h4">The problem</h2><p>Soch runs dozens of n8n workflows. When one failed, someone had to notice, open the execution, find the cause and fix it by hand.</p></section>
+  
+  <section class="sys-sec"><h2 class="h4">How it works</h2><ol class="steps"><li>An error trigger on every active workflow catches the failure, and Claude Haiku explains it in plain words.</li><li>The alert lands in ClickUp and email with an Auto-Fix button.</li><li>Auto-Fix queues the job. A worker pulls the failed execution and the workflow, and Claude returns a patched workflow with a summary.</li><li>The worker saves the patch through the n8n API, turns the workflow back on and emails a fix report.</li><li>A morning briefing rolls up email, ClickUp, the calendar and the last 24 hours of failures into one message.</li></ol></section>
+  
+  <section class="sys-sec"><h2 class="h4">What changed</h2><ul class="results"><li><b>35</b><span>active workflows under the watchdog</span></li><li><b>$0.01</b><span>or less per automated fix</span></li><li><b>6</b><span>workflows in the suite</span></li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">What I built</h2><ul class="points"><li>All six workflows in the suite, from the failure watchdog to the morning briefing.</li><li>End to end tests on staged failures before it went live.</li><li>The watchdog now covers all 35 active workflows; the auto-fix chain stays switched off until it is needed.</li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">Stack</h2><ul class="chips"><li class="chip">n8n</li><li class="chip">n8n REST API</li><li class="chip">Claude Haiku</li><li class="chip">Claude Sonnet</li><li class="chip">Google Sheets</li><li class="chip">Gmail</li><li class="chip">ClickUp</li></ul></section>
+  
+  
+  <section class="sys-sec"><h2 class="h4">Stills</h2><div class="stills"><img src="../../assets/img/jarvis-1.jpg" alt="A staged failure: one node turns red, Claude explains it in plain words and an Auto-Fix alert appears" loading="lazy" decoding="async"><img src="../../assets/img/jarvis-2.jpg" alt="The autofix worker reading the run and proposing a one-line patch to the failing node" loading="lazy" decoding="async"><img src="../../assets/img/jarvis-3.jpg" alt="The patched workflow saved through the n8n API and running green again" loading="lazy" decoding="async"><img src="../../assets/img/jarvis-4.jpg" alt="35 active workflows under the watchdog" loading="lazy" decoding="async"></div></section>
+  <nav class="pager" aria-label="More systems">
+    <a href="../../systems/seo-blogs/"><span class="dim">previous</span>Soch SEO Blogs App</a>
+    <a href="../../systems/airtable-to-postgres/"><span class="dim">next</span>Airtable to Postgres</a>
+  </nav>
+</article>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+  <span>© 2026 Muhammad Ahmad Tehseen</span>
+  <span>Hand-built. Every video on this site is rendered from code.</span>
+</div></footer>
+<script src="../../assets/js/loops.js" defer></script>
+</body>
+</html>
