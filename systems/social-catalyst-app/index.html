@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Catalyst app | Muhammad Ahmad Tehseen</title>
+<meta name="description" content="Soch&#39;s LinkedIn content studio, turned into a self-serve product anyone can sign up for.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Social Catalyst app | Muhammad Ahmad Tehseen">
+<meta property="og:description" content="Soch&#39;s LinkedIn content studio, turned into a self-serve product anyone can sign up for.">
+<meta property="og:image" content="https://muhammadahmadtehseen.github.io/assets/img/social-catalyst-app-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0d">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="../../"><span class="light s-live" aria-hidden="true"></span>ahmad<span class="dim">/systems</span></a>
+  <nav aria-label="Main"><a href="../../#systems">Systems</a><a href="../../#experience">Experience</a><a href="../../#contact">Contact</a></nav>
+</div></header>
+<main id="main">
+
+<article class="wrap sys">
+  <p class="back"><a href="../../#systems">← all systems</a></p>
+  <header class="sys-head">
+    <p class="meta"><span class="light s-live" aria-hidden="true"></span>live · Soch Consulting · Oct 2026 to present</p>
+    <h1 class="h1 sys-title">Social Catalyst app</h1>
+    <p class="lead">Soch&#39;s LinkedIn content studio, turned into a self-serve product anyone can sign up for.</p>
+    <p class="role"><span class="mono dim">my role</span> Led the switch to a self-serve product: 135 of 143 commits since it began.</p>
+  </header>
+  <div class="loop loop-lg" data-loop="form" data-labels="[&quot;Profile link&quot;,&quot;Three quick questions&quot;,&quot;Swipe 8 sample posts&quot;,&quot;Write my post&quot;,&quot;audit and free post ready&quot;]" aria-hidden="true"></div>
+  
+  <section class="sys-sec"><h2 class="h4">The problem</h2><p>Content Studio was built for Soch&#39;s own team, behind one shared password and with Google Sheets as its database. To offer it to individuals, it needed accounts, private workspaces, safe long-running jobs and a way to charge.</p></section>
+  
+  <section class="sys-sec"><h2 class="h4">How it works</h2><ol class="steps"><li>A person signs up, confirms their email and gets their own workspace.</li><li>Before paying, they get a free About audit: a score out of 10 on seven checks and the top three fixes.</li><li>They can swipe through sample posts and, after eight swipes, get one free post with a designed image.</li><li>Paid work runs the same pipeline Soch&#39;s team uses, paid for in credits.</li><li>Soch&#39;s team keeps working in the same app, with its own agency-only screens.</li></ol></section>
+  
+  <section class="sys-sec"><h2 class="h4">What changed</h2><ul class="results"><li><b>11</b><span>migration phases, all merged</span></li><li><b>7</b><span>checks in the free audit</span></li><li><b>135 of 143</b><span>commits since the switch</span></li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">What I built</h2><ul class="points"><li>Moved the data from Google Sheets to Supabase Postgres behind a repository layer, with row-level security as a backstop.</li><li>Accounts, members and workspaces, with every route checking access.</li><li>A job queue in a second service, where a step that already spent money is never run again.</li><li>A credit ledger with holds and per-run spending fuses, plus structured logs, error tracking and an audit trail.</li></ul></section>
+  
+  <section class="sys-sec"><h2 class="h4">Stack</h2><ul class="chips"><li class="chip">Next.js</li><li class="chip">TypeScript</li><li class="chip">Supabase</li><li class="chip">PostgreSQL</li><li class="chip">Drizzle</li><li class="chip">graphile-worker</li><li class="chip">Claude API</li><li class="chip">Sentry</li><li class="chip">Railway</li></ul><p class="cta"><a class="btn ghost" href="https://app.withsocialcatalyst.com" rel="noopener">app.withsocialcatalyst.com</a></p></section>
+  
+  
+  <section class="sys-sec"><h2 class="h4">Stills</h2><div class="stills"><img src="../../assets/img/social-catalyst-app-1.jpg" alt="Form for Social Catalyst app, early in the loop" loading="lazy" decoding="async"><img src="../../assets/img/social-catalyst-app-2.jpg" alt="Form for Social Catalyst app, a few steps later" loading="lazy" decoding="async"></div></section>
+  <nav class="pager" aria-label="More systems">
+    <a href="../../systems/megaapp/"><span class="dim">previous</span>MegaApp outreach console</a>
+    <a href="../../systems/candidate-search/"><span class="dim">next</span>Candidate search evals</a>
+  </nav>
+</article>
+</main>
+<footer class="foot"><div class="wrap foot-in">
+  <span>© 2026 Muhammad Ahmad Tehseen</span>
+  <span>Hand-built. Every video on this site is rendered from code.</span>
+</div></footer>
+<script src="../../assets/js/loops.js" defer></script>
+</body>
+</html>

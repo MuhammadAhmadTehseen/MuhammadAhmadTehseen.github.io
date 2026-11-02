@@ -26,11 +26,11 @@
 <section class="hero wrap has-panel">
   <aside class="hero-panel" aria-hidden="true">
     <p class="hero-panel-bar"><span class="light s-live"></span>systems --live</p>
-    <div class="loop hero-log" data-loop="log" data-labels="[&quot;content-studio: comment drafts ready&quot;,&quot;card-studio: carousel rendered&quot;,&quot;seo-blogs: brief approved, writing&quot;,&quot;watchdog: 35 workflows green&quot;,&quot;migration: row parity 99.985%&quot;,&quot;proposal: drafted in the right voice&quot;]"></div>
+    <div class="loop hero-log" data-loop="log" data-labels="[&quot;content-studio: comment drafts ready&quot;,&quot;card-studio: carousel rendered&quot;,&quot;seo-blogs: brief approved, writing&quot;,&quot;watchdog: 35 workflows green&quot;,&quot;migration: row parity 99.985%&quot;,&quot;proposal: drafted in the right voice&quot;,&quot;megaapp: 753 tests green&quot;]"></div>
   </aside>
   <p class="eyebrow">AI engineer · Lahore, Pakistan · open to remote</p>
   <h1 class="h1">I ship AI systems <em>into real businesses</em>.</h1>
-  <p class="lead">I&#39;m Ahmad. I sit with the people doing the work, find the slow part, and ship an AI system that does it: LLM pipelines, agents, data migrations and the tools around them. Right now I&#39;m an AI Engineer at Soch Consulting and a Forward Deployed Engineer for a US talent marketplace.</p>
+  <p class="lead">I&#39;m Ahmad. I sit with the people doing the work, find the slow part, and ship an AI system that does it: LLM pipelines, agents, data migrations and the tools around them. Right now I&#39;m a Forward Deployed Engineer at DevPlusOps, embedded with a US talent marketplace, and an AI Engineer at Soch Consulting.</p>
   <ul class="telemetry" aria-label="Key numbers">
     <li><span class="light s-live" aria-hidden="true"></span><b>44</b> active n8n workflows</li>
     <li><span class="light s-live" aria-hidden="true"></span><b>397,867</b> records moved off Airtable</li>
@@ -96,6 +96,24 @@
   <h3 class="h3 ps-title"><span class="mono prompt">$ ps aux</span> everything else I have built</h3>
   <ol class="ps">
     <li class="ps-head" aria-hidden="true"><span>system</span><span>what it does</span><span>stack</span><span>status</span></li>
+    <li><a class="ps-row" href="./systems/megaapp/">
+      <span class="ps-name mono">megaapp</span>
+      <span class="ps-what">One console for a team&#39;s cold email: campaigns, leads, replies and mailboxes, from the web or Claude.</span>
+      <span class="ps-stack">Python · FastAPI · SQLite</span>
+      <span class="ps-status"><span class="light s-built" aria-hidden="true"></span>built</span>
+    </a></li>
+    <li><a class="ps-row" href="./systems/social-catalyst-app/">
+      <span class="ps-name mono">social-catalyst-app</span>
+      <span class="ps-what">Soch&#39;s LinkedIn content studio, turned into a self-serve product anyone can sign up for.</span>
+      <span class="ps-stack">Next.js · TypeScript · Supabase</span>
+      <span class="ps-status"><span class="light s-live" aria-hidden="true"></span>live</span>
+    </a></li>
+    <li><a class="ps-row" href="./systems/candidate-search/">
+      <span class="ps-name mono">candidate-search</span>
+      <span class="ps-what">Measuring and fixing an AI candidate search for a US talent marketplace.</span>
+      <span class="ps-stack">PostgreSQL · pgvector · TypeScript</span>
+      <span class="ps-status"><span class="light s-progress" aria-hidden="true"></span>in progress</span>
+    </a></li>
     <li><a class="ps-row" href="./systems/n8n-fleet/">
       <span class="ps-name mono">n8n-fleet</span>
       <span class="ps-what">Every Soch workflow reports its runs and AI cost to one live dashboard.</span>
@@ -182,16 +200,16 @@
   <h2 class="h2">Where I <em>work</em>.</h2>
   <ol class="jobs">
     <li class="job">
+      <p class="meta">Jun 2026 to present · Remote</p>
+      <h3 class="h3">DevPlusOps</h3>
+      <p class="role">Forward Deployed Engineer</p>
+      <ul class="points"><li>Embedded with a US talent marketplace: scope work with their leadership, build in their own Supabase, n8n and GitHub, and fix production issues when alerts fire.</li><li>Delivered the Airtable to Supabase migration: 397,867 records moved and 636 computed fields rebuilt as live Postgres views, at 99.985% row parity.</li><li>Rebuilt the client&#39;s automations as 53 n8n workflows, and built the first 30 views of a 40-view operations app for 48 users.</li><li>Built evals for their AI candidate search; one index fix roughly doubled recall.</li><li>Built MegaApp, the team&#39;s outreach console, with an MCP server for Claude and 753 tests.</li></ul>
+    </li>
+    <li class="job">
       <p class="meta">Jan 2026 to present · Lahore</p>
       <h3 class="h3">Soch Consulting</h3>
       <p class="role">AI Engineer</p>
-      <ul class="points"><li>Built Soch Content Studio, the app the team uses to run founder clients&#39; LinkedIn, including AI image generation and Card Studio.</li><li>Rebuilt the 152-node n8n SEO workflow as a tested app with a cost ledger and 723 automated tests.</li><li>Own a fleet of 44 active n8n workflows, each reporting its runs and AI cost to a live dashboard.</li><li>Built Jarvis, a self-healing layer that explains failures and patches workflows through the n8n API.</li><li>Run internal AI training for non-technical teams: workshop scripts, live builds and a reusable prompt library.</li></ul>
-    </li>
-    <li class="job">
-      <p class="meta">Jul 2026 to present · Remote</p>
-      <h3 class="h3">DevPlusOps</h3>
-      <p class="role">Forward Deployed Engineer, for a US talent marketplace</p>
-      <ul class="points"><li>Led the Airtable to Supabase migration: 397,867 records extracted and 636 computed fields rebuilt as live Postgres views.</li><li>Kept the business running during the move, with Make.com and Zapier writing to both systems through n8n.</li><li>Built an operations app with 40 views for 48 users, and a member portal with magic-link sign-in.</li><li>Found and fixed data gaps until row parity reached 99.985%.</li></ul>
+      <ul class="points"><li>Building HR and ops automations inside a client&#39;s own cloud: a Slack bot, approvals, Notion records and FAQ answers on their n8n.</li><li>Built Soch Content Studio, the app the team uses to run founder clients&#39; LinkedIn, and turned it into the self-serve Social Catalyst app.</li><li>Rebuilt the 152-node n8n SEO workflow as a tested app with a cost ledger and 723 automated tests.</li><li>Own a fleet of 44 active n8n workflows, each reporting its runs and AI cost to a live dashboard.</li><li>Built Jarvis, a self-healing layer that explains failures and patches workflows through the n8n API.</li><li>Run internal AI training for non-technical teams: workshop scripts, live builds and a reusable prompt library.</li></ul>
     </li>
     <li class="job">
       <p class="meta">Dec 2023 to Dec 2025</p>
@@ -212,9 +230,9 @@
   <p class="eyebrow">03 · Toolbox</p>
   <h2 class="h2">What I build <em>with</em>.</h2>
   <div class="tools">
-    <div class="tool"><h3 class="h4">AI and agents</h3><ul class="chips"><li class="chip">Claude API</li><li class="chip">Claude Code</li><li class="chip">MCP</li><li class="chip">Agent workflows</li><li class="chip">Structured outputs</li><li class="chip">Prompt caching</li><li class="chip">gpt-image-2</li></ul></div>
+    <div class="tool"><h3 class="h4">AI and agents</h3><ul class="chips"><li class="chip">Claude API</li><li class="chip">Claude Code</li><li class="chip">MCP</li><li class="chip">Agent workflows</li><li class="chip">Structured outputs</li><li class="chip">Prompt caching</li><li class="chip">gpt-image-2</li><li class="chip">LLM evals</li></ul></div>
     <div class="tool"><h3 class="h4">Automation</h3><ul class="chips"><li class="chip">n8n</li><li class="chip">Make.com</li><li class="chip">Zapier</li><li class="chip">Apify</li><li class="chip">Playwright</li></ul></div>
-    <div class="tool"><h3 class="h4">Data and backend</h3><ul class="chips"><li class="chip">PostgreSQL</li><li class="chip">Supabase</li><li class="chip">Prisma</li><li class="chip">Node.js</li><li class="chip">Python</li><li class="chip">SQL</li></ul></div>
+    <div class="tool"><h3 class="h4">Data and backend</h3><ul class="chips"><li class="chip">PostgreSQL</li><li class="chip">Supabase</li><li class="chip">Prisma</li><li class="chip">Node.js</li><li class="chip">Python</li><li class="chip">SQL</li><li class="chip">FastAPI</li><li class="chip">SQLite</li><li class="chip">Drizzle</li></ul></div>
     <div class="tool"><h3 class="h4">Web and delivery</h3><ul class="chips"><li class="chip">Next.js</li><li class="chip">TypeScript</li><li class="chip">React</li><li class="chip">Vercel</li><li class="chip">Railway</li><li class="chip">GitHub Actions</li></ul></div>
   </div>
   <h3 class="h4 certs-title">Certifications</h3>
