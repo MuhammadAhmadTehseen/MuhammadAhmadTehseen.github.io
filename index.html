@@ -96,6 +96,12 @@
   <h3 class="h3 ps-title"><span class="mono prompt">$ ps aux</span> everything else I have built</h3>
   <ol class="ps">
     <li class="ps-head" aria-hidden="true"><span>system</span><span>what it does</span><span>stack</span><span>status</span></li>
+    <li><a class="ps-row" href="./systems/candidate-search/">
+      <span class="ps-name mono">candidate-search</span>
+      <span class="ps-what">Search the client&#39;s own pool, go outbound when it runs dry, and check every change against real hires.</span>
+      <span class="ps-stack">TypeScript · PostgreSQL + pgvector · OpenAI embeddings</span>
+      <span class="ps-status"><span class="light s-progress" aria-hidden="true"></span>in progress</span>
+    </a></li>
     <li><a class="ps-row" href="./systems/megaapp/">
       <span class="ps-name mono">megaapp</span>
       <span class="ps-what">One console for a team&#39;s cold email: campaigns, leads, replies and mailboxes, from the web or Claude.</span>
@@ -107,12 +113,6 @@
       <span class="ps-what">Soch&#39;s LinkedIn content studio, turned into a self-serve product anyone can sign up for.</span>
       <span class="ps-stack">Next.js · TypeScript · Supabase</span>
       <span class="ps-status"><span class="light s-live" aria-hidden="true"></span>live</span>
-    </a></li>
-    <li><a class="ps-row" href="./systems/candidate-search/">
-      <span class="ps-name mono">candidate-search</span>
-      <span class="ps-what">Measuring and fixing an AI candidate search for a US talent marketplace.</span>
-      <span class="ps-stack">PostgreSQL · pgvector · TypeScript</span>
-      <span class="ps-status"><span class="light s-progress" aria-hidden="true"></span>in progress</span>
     </a></li>
     <li><a class="ps-row" href="./systems/n8n-fleet/">
       <span class="ps-name mono">n8n-fleet</span>
@@ -203,7 +203,7 @@
       <p class="meta">Jun 2026 to present · Remote</p>
       <h3 class="h3">DevPlusOps</h3>
       <p class="role">Forward Deployed Engineer</p>
-      <ul class="points"><li>Embedded with a US talent marketplace: scope work with their leadership, build in their own Supabase, n8n and GitHub, and fix production issues when alerts fire.</li><li>Delivered the Airtable to Supabase migration: 397,867 records moved and 636 computed fields rebuilt as live Postgres views, at 99.985% row parity.</li><li>Rebuilt the client&#39;s automations as 53 n8n workflows, and built the first 30 views of a 40-view operations app for 48 users.</li><li>Built evals for their AI candidate search; one index fix roughly doubled recall.</li><li>Built MegaApp, the team&#39;s outreach console, with an MCP server for Claude and 753 tests.</li></ul>
+      <ul class="points"><li>Embedded with a US talent marketplace: scope work with their leadership, build in their own Supabase, n8n and GitHub, and fix production issues when alerts fire.</li><li>Work on their AI candidate search: filters, vector search and an LLM judge with an auditor over 120,000+ people; my evals found an index fix that roughly doubled recall.</li><li>Run outbound sourcing when their pool runs dry: AI Ark, Serper and Apify find people, SalesQL and FullEnrich find emails, Reoon and ZeroBounce verify them, Instantly sends.</li><li>Keep client hire records right: new client accounts, hires and start dates across Airtable and Postgres.</li><li>Delivered the Airtable to Supabase migration (397,867 records, 636 computed fields as live Postgres views, 99.985% row parity) and rebuilt their automations as 53 n8n workflows.</li><li>Built MegaApp, the team&#39;s outreach console, with an MCP server for Claude and 753 tests.</li></ul>
     </li>
     <li class="job">
       <p class="meta">Jan 2026 to present · Lahore</p>

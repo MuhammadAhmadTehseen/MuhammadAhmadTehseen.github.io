@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Candidate search evals | Muhammad Ahmad Tehseen</title>
-<meta name="description" content="Measuring and fixing an AI candidate search for a US talent marketplace.">
+<title>Candidate search and outbound sourcing | Muhammad Ahmad Tehseen</title>
+<meta name="description" content="Search the client&#39;s own pool, go outbound when it runs dry, and check every change against real hires.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Candidate search evals | Muhammad Ahmad Tehseen">
-<meta property="og:description" content="Measuring and fixing an AI candidate search for a US talent marketplace.">
+<meta property="og:title" content="Candidate search and outbound sourcing | Muhammad Ahmad Tehseen">
+<meta property="og:description" content="Search the client&#39;s own pool, go outbound when it runs dry, and check every change against real hires.">
 <meta property="og:image" content="https://muhammadahmadtehseen.github.io/assets/img/candidate-search-1.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0c0d">
@@ -27,27 +27,27 @@
   <p class="back"><a href="../../#systems">← all systems</a></p>
   <header class="sys-head">
     <p class="meta"><span class="light s-progress" aria-hidden="true"></span>in progress · US talent marketplace, via DevPlusOps · Jul 2026 to present</p>
-    <h1 class="h1 sys-title">Candidate search evals</h1>
-    <p class="lead">Measuring and fixing an AI candidate search for a US talent marketplace.</p>
-    <p class="role"><span class="mono dim">my role</span> Forward Deployed Engineer: built the evals, found the fixes, now building features.</p>
+    <h1 class="h1 sys-title">Candidate search and outbound sourcing</h1>
+    <p class="lead">Search the client&#39;s own pool, go outbound when it runs dry, and check every change against real hires.</p>
+    <p class="role"><span class="mono dim">my role</span> Forward Deployed Engineer on a small team: built the search evals, run outbound sourcing and keep client hire records right.</p>
   </header>
-  <div class="loop loop-lg" data-loop="pipeline" data-labels="[&quot;replay a past job&quot;,&quot;search candidates&quot;,&quot;rank the shortlist&quot;,&quot;is the real hire there?&quot;,&quot;score recall&quot;]" aria-hidden="true"></div>
+  <div class="loop loop-lg" data-loop="pipeline" data-labels="[&quot;hiring request in&quot;,&quot;filter 120k people&quot;,&quot;rank + LLM judge&quot;,&quot;pool thin? go outbound&quot;,&quot;find + verify emails&quot;,&quot;shortlist to client&quot;]" aria-hidden="true"></div>
   
-  <section class="sys-sec"><h2 class="h4">The problem</h2><p>The client&#39;s AI search ranks candidates for each new job. Nobody could say how often it found the person who was actually hired, so every change was a guess.</p></section>
+  <section class="sys-sec"><h2 class="h4">The problem</h2><p>Clients send a hiring request and expect a short list of strong people. About 97% of placements came from the client&#39;s own pool of 120,000+ people, so roles too niche for the pool stalled. And nobody could say how often the search found the person who was actually hired.</p></section>
   
-  <section class="sys-sec"><h2 class="h4">How it works</h2><ol class="steps"><li>Replay past jobs and check whether the real hire shows up in the results.</li><li>Compare semantic search with keyword and criteria search, and test each filter on its own.</li><li>A/B test re-ranking models and prompts against the same set.</li><li>Ship the changes that win, and correct the numbers in the open when a bigger run disagrees.</li></ol></section>
+  <section class="sys-sec"><h2 class="h4">How it works</h2><ol class="steps"><li>Hard filters (country, pay, English level, recency) cut the pool of 120,000+ people down to who fits the job.</li><li>Keyword and vector search rank the best few hundred, and a cheap LLM prescreen drops clear misses.</li><li>An LLM judge scores each person against the job&#39;s checklist, and an auditor checks the evidence behind every verdict.</li><li>When the pool runs dry, go outbound: AI Ark people search, Serper (Google search of LinkedIn) and Apify find new people, and the same judge scores them.</li><li>SalesQL and FullEnrich find personal emails, Reoon and ZeroBounce verify them, and Instantly sends only after a person approves the list.</li><li>People who reply apply through the normal candidate flow. When a client hires, the hire and start date are recorded.</li><li>Replay past jobs to check the real hire still shows up, and ship only the changes that win.</li></ol></section>
   
-  <section class="sys-sec"><h2 class="h4">What changed</h2><ul class="results"><li><b>14% to 33%</b><span>recall at 50 from one index fix</span></li><li><b>75%</b><span>of real hires a hard country filter removed</span></li><li><b>41.7%</b><span>recall at 100 for semantic search, vs 13.3% for keywords</span></li></ul></section>
+  <section class="sys-sec"><h2 class="h4">What changed</h2><ul class="results"><li><b>21</b><span>interested candidates from outbound, on a job where 158 pool invites found no one ready</span></li><li><b>14% to 33%</b><span>recall at 50 from one index fix</span></li><li><b>75%</b><span>of real hires a hard country filter removed</span></li><li><b>$0.16</b><span>to judge and audit 96 candidates</span></li><li><b>41.7%</b><span>recall at 100 for semantic search, vs 13.3% for keywords</span></li></ul></section>
   
-  <section class="sys-sec"><h2 class="h4">What I built</h2><ul class="points"><li>The evaluation harness and its checked numbers.</li><li>The recall fix, country as a soft preference instead of a hard filter, and a longer shortlist.</li><li>Later features in the client&#39;s search product, such as an intro-video language check.</li></ul></section>
+  <section class="sys-sec"><h2 class="h4">What I built</h2><ul class="points"><li>The evaluation harness: replay past jobs and score whether the real hire is found. It led to the recall fix, country as a soft preference instead of a hard filter, and a longer shortlist.</li><li>Outbound sourcing runs, with the team, for jobs the pool could not fill: search specs, discovery, email finding and checking, and Instantly campaigns.</li><li>Client hire records: new client accounts, hires and start dates kept in step across Airtable and Postgres.</li><li>Features in the client&#39;s search product, such as an intro-video English check.</li><li>The client is under NDA, so the code stays private. I can walk you through how it works on a call.</li></ul></section>
   
-  <section class="sys-sec"><h2 class="h4">Stack</h2><ul class="chips"><li class="chip">PostgreSQL</li><li class="chip">pgvector</li><li class="chip">TypeScript</li><li class="chip">Node.js</li><li class="chip">Claude Sonnet</li></ul></section>
+  <section class="sys-sec"><h2 class="h4">Stack</h2><ul class="chips"><li class="chip">TypeScript</li><li class="chip">PostgreSQL + pgvector</li><li class="chip">OpenAI embeddings</li><li class="chip">LLM judge + auditor</li><li class="chip">AI Ark</li><li class="chip">Serper</li><li class="chip">Apify</li><li class="chip">SalesQL</li><li class="chip">FullEnrich</li><li class="chip">Reoon</li><li class="chip">ZeroBounce</li><li class="chip">Instantly</li></ul></section>
   
   
-  <section class="sys-sec"><h2 class="h4">Stills</h2><div class="stills"><img src="../../assets/img/candidate-search-1.jpg" alt="Run sheet for Candidate search evals, early in the loop" loading="lazy" decoding="async"><img src="../../assets/img/candidate-search-2.jpg" alt="Run sheet for Candidate search evals, a few steps later" loading="lazy" decoding="async"></div></section>
+  <section class="sys-sec"><h2 class="h4">Stills</h2><div class="stills"><img src="../../assets/img/candidate-search-1.jpg" alt="Run sheet for Candidate search and outbound sourcing, early in the loop" loading="lazy" decoding="async"><img src="../../assets/img/candidate-search-2.jpg" alt="Run sheet for Candidate search and outbound sourcing, a few steps later" loading="lazy" decoding="async"></div></section>
   <nav class="pager" aria-label="More systems">
-    <a href="../../systems/social-catalyst-app/"><span class="dim">previous</span>Social Catalyst app</a>
-    <a href="../../systems/n8n-fleet/"><span class="dim">next</span>n8n fleet and ops dashboard</a>
+    <a href="../../systems/noon-voice/"><span class="dim">previous</span>Noon enrollment kiosk</a>
+    <a href="../../systems/megaapp/"><span class="dim">next</span>MegaApp outreach console</a>
   </nav>
 </article>
 </main>
